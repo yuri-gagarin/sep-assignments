@@ -9,21 +9,44 @@ class Line
   end
 
   def join(person)
+
+    self.members.push(person)
+
   end
 
   def leave(person)
+
+    self.members.delete(person)
+
   end
 
   def front
+
+    self.members.first
+
   end
 
   def middle
+
+    middle = (self.members.length / 2).floor
   end
 
   def back
+
+    self.members.last
+
   end
 
   def search(person)
+
+    self.members.each do | member |
+      if member == person
+        return person
+      else
+        puts "The person named #{person} is not in line!"
+      end
+    end
+    
   end
 
   private

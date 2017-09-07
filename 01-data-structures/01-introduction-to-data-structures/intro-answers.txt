@@ -1,0 +1,18 @@
+How does your data structurea allow developers to access and manipulate the data?
+If a developer wanted to find a specific element in your data structure, how would you search for it?
+What other real world data can each structure represent? 
+
+
+Line:
+
+* a line in our example works like an array. It will get larger as more people join and will get smaller as people leave. The line class has a :members accessor which is an array. When a new instance is initialized we have a new Class instance with <instance>.members as the array for storage of "people"; 
+* The .join(person) method will add a person, .delete(person) method will delete a person. There are also methods for finding first, last and a specific person in line.
+* this can represent any linear queue. Let's say there is a concert presale and a limited number of tickets are available. You can create a specific size array and add unique signed in users to it which would be in line to get a set number of tickets.
+
+Screen and Pixel
+
+* each new instance of the Pixel class will generate an abject with red, green and blue color variables. If the color code is innacurate the system will correct to a valid color code before creating a new object
+* once we have a new Pixel object we can insert it into the screen. We initialize the screen by setting the height and width.
+* we can insert a pixel by passing a new Pixel instance, as well as the coordinates. The Screen class instance will validate the coordinates to make sure they are inbounds of the screen
+* a user can retrieve information about specific pixels by searching with specific coordinates with the .at() method.
+* tweaked version of this data structure can be used to build some sort of inventory. Let's say it would be cars. One class to instantiate a new car, another class to instatiate a garage/storage. Then you could store cars based by type, color, age, etc, however a user would like to set it up
