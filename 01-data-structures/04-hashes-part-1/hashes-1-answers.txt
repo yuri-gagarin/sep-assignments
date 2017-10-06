@@ -1,0 +1,4 @@
+Doubling the size of the array when a collision occurs may seem like a good idea at first, but as the input size grows, with
+especially large hashes, the array may become unnecessarily large. If we double the size of the array every time there
+is a collision, we can eventually end up with a huge array size of hundreds of thousands? millions? of elements with very
+many nil index values unnecessarily eating up memory space
