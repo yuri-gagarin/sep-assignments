@@ -44,7 +44,7 @@ class List
   
   void DisplayList() 
   {
-    Node *temp = new Node();
+    Node temp = new Class();
     temp = head;
     while (temp != NULL)
     {
